@@ -33,7 +33,7 @@
 
     <!-- CSS und JS für Datatables -->
     <link rel="stylesheet" type="text/css" href="css/datatables.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css"/>
 
     <script type="text/javascript" src="js/datatables.min.js"></script>
     <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
@@ -41,8 +41,11 @@
 
     <script type="text/javascript" language="javascript" class="init">
         $(document).ready(function() {
-	       $('#example').DataTable();
-      } );
+  	       $('#standesamt').DataTable( {
+             paging: false,
+             "order": [[ 0, "asc" ]]
+           } );
+        } );
     </script>
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
@@ -61,7 +64,7 @@
     </div>
 
     <div class="row g-3">
-      <table id="example" class="display" style="width:100%">
+      <table id="standesamt" class="display" style="width:100%">
             <thead>
                 <tr>
                     <th>Ort</th>
