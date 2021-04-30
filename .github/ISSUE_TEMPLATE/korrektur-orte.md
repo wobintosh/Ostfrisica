@@ -1,8 +1,8 @@
 ---
 name: Korrektur Orte
 about: Korrekturen für die Zugehörigkeit von Orten zu Gemeinden und Kreisen
-title: 'Ort: '
-labels: ''
+title: ''
+labels: Orte
 assignees: ''
 
 ---

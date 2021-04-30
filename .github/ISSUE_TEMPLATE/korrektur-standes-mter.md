@@ -1,8 +1,8 @@
 ---
 name: Korrektur Standesämter
 about: Korrekturen für Standesämter
-title: 'Standesamt: '
-labels: ''
+title: ''
+labels: Standesämter
 assignees: ''
 
 ---
@@ -10,3 +10,5 @@ assignees: ''
 **Ort:** 
 **Gehört zu Standesamt:** 
 **Zeitraum:**
+
+**Stand:**
