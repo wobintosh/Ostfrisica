@@ -5,7 +5,7 @@ var map = L.map('map', {
   center: [53.4840, 7.5066],
   zoom: 10,
   zoomControl: false,
-  scrollWheelZoom: false
+  scrollWheelZoom: true
 });
 
 // Attribution
@@ -13,8 +13,8 @@ map.attributionControl
 .setPrefix('<a href="http://github.com/wobintosh/Ostfrisica">GitHub</a>, Created with <a href="http://leafletjs.com" title="Leaflet">Leaflet</a>');
 
 // Controls
-L.Control.geocoder({position: "topleft"}).addTo(map);
-L.control.scale().addTo(map);
+// L.Control.geocoder({position: "topleft"}).addTo(map);
+// L.control.scale().addTo(map);
 L.control.zoomLabel({position: "topright"}).addTo(map); // optional Zoom Label for map construction
 L.control.zoom({position: "topright"}).addTo(map); // Reposition zoom control other than default topleft
 // optional: add legend to toggle any baselayers and/or overlays
@@ -25,11 +25,11 @@ var controlLayers = L.control.layers( null, null, {
 }).addTo(map);
 
 // optional Coordinate Control for map construction
-var c = new L.Control.Coordinates();
+/* var c = new L.Control.Coordinates();
 c.addTo(map);
 map.on('click', function(e) {
 	c.setCoordinates(e);
-});
+}); */
 
 // Kartenlayer
 var lightAll = new L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
