@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Verwaltungsgrenzen in Ostfriesland">
+    <meta name="author" content="grdl.eu">
+    <title>Verwaltungsgrenzen in Ostfriesland</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/headers.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/Control.Geocoder.css" />
+    <link rel="stylesheet" href="css/Control.Coordinates.css" />
+    <link rel="stylesheet" href="css/L.Control.ZoomLabel.css" />
+
+    <!-- JS -->
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/leaflet.js"></script>
+    <script type="text/javascript" src="js/Control.Geocoder.js"></script>
+    <script type="text/javascript" src="js/Control.Coordinates.js"></script>
+    <script type="text/javascript" src="js/L.Control.ZoomLabel.js"></script>
+    <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+
+  </head>
+
+  <body class="bg-light">
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+          <span class="fs-4">grdl.eu</span>
+        </a>
+
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="index.html" class="nav-link">Start</a></li>
+          <li class="nav-item"><a href="Standesamt.html" class="nav-link">Standesämter</a></li>
+          <li class="nav-item"><a href="Orte.html" class="nav-link">Orte</a></li>
+          <li class="nav-item"><a href="Verwaltungsgrenzen.html" class="nav-link active">Verwaltungsgrenzen</a></li>
+          <li class="nav-item"><a href="https://blog.grdl.eu/datenschutz/" class="nav-link">Datenschutz</a></li>
+          <li class="nav-item"><a href="https://blog.grdl.eu/impressum/" class="nav-link">Impressum</a></li>
+        </ul>
+      </header>
+    </div>
+    <div class="container">
+      <main>
+        <div class="py-5 text-center">
+          <h1>Gemeinden und Landkreise in Ostfriesland</h1>
+          <p class="lead">Darstellung der Gemeinde- und Kreisgrenzen im heutigen Ostfriesland.</p>
+        </div>
+
+        <div class="container" id="map" style="width:100%; height:750px">
+          <script src="js/verwaltungsgrenzen.js"></script>
+        </div>
+      </main>
+
+      <footer class="text-muted text-center text-small">
+        <p class="mb-1">grdl.eu 2021, CC-BY-SA</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="https://github.com/wobintosh/Ostfrisica/">Code auf GitHub</a></li>
+          <li class="list-inline-item"><a href="https://blog.grdl.eu/datenschutz/">Datenschutz</a></li>
+          <li class="list-inline-item"><a href="https://blog.grdl.eu/impressum/">Impressum</a></li>
+        </ul>
+      </footer>
+    </div>
+
+  </body>
+</html>
