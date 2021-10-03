@@ -10,7 +10,7 @@ var map = L.map('map', {
 
 // Attribution
 map.attributionControl
-.setPrefix('<a href="http://github.com/wobintosh/Ostfrisica">GitHub</a>, Created with <a href="http://leafletjs.com" title="Leaflet">Leaflet</a>');
+.setPrefix('<a href="https://github.com/wobintosh/Ostfrisica">GitHub</a>, Created with <a href="http://leafletjs.com" title="Leaflet">Leaflet</a>');
 
 // Controls
 // L.Control.geocoder({position: "topleft"}).addTo(map);
@@ -32,8 +32,8 @@ map.on('click', function(e) {
 }); */
 
 // Kartenlayer
-var lightAll = new L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-	attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+var lightAll = new L.tileLayer('http://{s}.tile.openstreetmap.de/{z}/{x}/{y}.png', {
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> Mitwirkende',
 	maxZoom: 19
 }).addTo(map); // adds layer by default
 // controlLayers.addBaseLayer(lightAll, 'OpenStreetMap');
