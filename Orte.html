@@ -49,8 +49,8 @@
     <!-- Konfigurationen für die Tabelle -->
      <script type="text/javascript" language="javascript" class="init">
         $(document).ready(function() {
-            $('#standesamt thead tr').clone(true).appendTo( '#standesamt thead' );
-            $('#standesamt thead tr:eq(1) th').each( function (i) {
+            $('#orte thead tr').clone(true).appendTo( '#orte thead' );
+            $('#orte thead tr:eq(1) th').each( function (i) {
                 var title = $(this).text();
                 $(this).html( '<input type="text" placeholder="Suche in '+title+'" />' );
 
@@ -64,7 +64,7 @@
                 } );
             } );
 
-            var table = $('#standesamt').DataTable( {
+            var table = $('#orte').DataTable( {
                 orderCellsTop: true,
                 fixedHeader: true,
                 paging: false,              /* Keine Paginierung */
@@ -110,7 +110,7 @@
         </div>
 
         <div class="container">
-          <table id="standesamt" class="display" style="width:100%">
+          <table id="orte" class="display" style="width:100%">
                 <thead>
                     <tr>
                         <th>Ort</th>
