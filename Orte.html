@@ -49,8 +49,8 @@
     <!-- Konfigurationen für die Tabelle -->
      <script type="text/javascript" language="javascript" class="init">
         $(document).ready(function() {
-            $('#standesamt thead tr').clone(true).appendTo( '#standesamt thead' );
-            $('#standesamt thead tr:eq(1) th').each( function (i) {
+            $('#orte thead tr').clone(true).appendTo( '#orte thead' );
+            $('#orte thead tr:eq(1) th').each( function (i) {
                 var title = $(this).text();
                 $(this).html( '<input type="text" placeholder="Suche in '+title+'" />' );
 
@@ -64,7 +64,7 @@
                 } );
             } );
 
-            var table = $('#standesamt').DataTable( {
+            var table = $('#orte').DataTable( {
                 orderCellsTop: true,
                 fixedHeader: true,
                 paging: false,              /* Keine Paginierung */
@@ -94,7 +94,7 @@
 
         <ul class="nav nav-pills">
           <li class="nav-item"><a href="index.html" class="nav-link active">Start</a></li>
-          <li class="nav-item"><a href="Standesamt.html" class="nav-link">Standesämter</a></li>
+          <li class="nav-item"><a href="orte.html" class="nav-link">Standesämter</a></li>
           <li class="nav-item"><a href="Orte.html" class="nav-link">Orte</a></li>
           <li class="nav-item"><a href="https://blog.grdl.eu/datenschutz/" class="nav-link">Datenschutz</a></li>
           <li class="nav-item"><a href="https://blog.grdl.eu/impressum/" class="nav-link">Impressum</a></li>
@@ -109,7 +109,7 @@
         </div>
 
         <div class="container">
-          <table id="standesamt" class="display" style="width:100%">
+          <table id="orte" class="display" style="width:100%">
                 <thead>
                     <tr>
                         <th>Ort</th>
