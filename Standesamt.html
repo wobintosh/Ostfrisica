@@ -5,17 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Standesämter in Ostfriesland">
     <meta name="author" content="grdl.eu">
-    <title>Standesämter in Ostfriesland</title>
 
+    <!-- Überall benötigter Javascript -->
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+    <!-- JS zum Laden von header und footer -->
+    <script>
+      $(function(){
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
 
-
-    <!-- Bootstrap core CSS -->
+    <!-- Überall benötigtes CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- CSS für Header -->
     <link href="css/headers.css" rel="stylesheet">
+
+    <title>Standesämter in Ostfriesland</title>
 
     <style>
       .bd-placeholder-img {
@@ -87,23 +94,8 @@
   </head>
 
   <body class="bg-light">
-    <div class="container">
-      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-          <span class="fs-4">grdl.eu</span>
-        </a>
+    <div class="container" id="header"></div>
 
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="index.html" class="nav-link">Start</a></li>
-          <li class="nav-item"><a href="Standesamt.html" class="nav-link active">Standesämter</a></li>
-          <li class="nav-item"><a href="Orte.html" class="nav-link">Orte</a></li>
-          <li class="nav-item"><a href="Verwaltungsgrenzen.html" class="nav-link">Verwaltungsgrenzen</a></li>
-          <li class="nav-item"><a href="https://blog.grdl.eu/datenschutz/" class="nav-link">Datenschutz</a></li>
-          <li class="nav-item"><a href="https://blog.grdl.eu/impressum/" class="nav-link">Impressum</a></li>
-        </ul>
-      </header>
-    </div>
     <div class="container">
       <main>
         <div class="py-5 text-center">
@@ -951,15 +943,8 @@
         </div>
       </main>
 
-      <footer class="text-muted text-center text-small">
-        <p class="mb-1">grdl.eu 2021, CC-BY-SA</p>
-        <ul class="list-inline">
-          <li class="list-inline-item"><a href="https://github.com/wobintosh/Ostfrisica/">Code auf GitHub</a></li>
-          <li class="list-inline-item"><a href="https://blog.grdl.eu/datenschutz/">Datenschutz</a></li>
-          <li class="list-inline-item"><a href="https://blog.grdl.eu/impressum/">Impressum</a></li>
-        </ul>
-      </footer>
     </div>
 
   </body>
+  <div id="footer"></div>
 </html>
