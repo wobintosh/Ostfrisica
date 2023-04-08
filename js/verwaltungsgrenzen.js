@@ -2,7 +2,7 @@
 
 // Festlegung Kartenbereich
 var map = L.map('map', {
-  center: [53.4840, 7.5066],
+  center: [53.510146,7.802865], //aus Eckpunkten berechnet mit https://www.geomidpoint.com/, Eckpunkte aus Maperitive
   zoom: 10,
   zoomControl: false,
   scrollWheelZoom: true
@@ -24,57 +24,12 @@ var controlLayers = L.control.layers( null, null, {
   collapsed: false
 }).addTo(map);
 
-// optional Coordinate Control for map construction
-/* var c = new L.Control.Coordinates();
-c.addTo(map);
-map.on('click', function(e) {
-	c.setCoordinates(e);
-}); */
-
 // Kartenlayer
-var lightAll = new L.tileLayer('http://{s}.tile.openstreetmap.de/{z}/{x}/{y}.png', {
+//var lightAll = new L.tileLayer('http://{s}.tile.openstreetmap.de/{z}/{x}/{y}.png', {		// Tiles von OSM
+var lightAll = new L.tileLayer('../data/tiles/{z}/{x}/{y}.png', {		// Lokale Tiles
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> Mitwirkende',
-	maxZoom: 19
+	maxZoom: 10
 }).addTo(map); // adds layer by default
-// controlLayers.addBaseLayer(lightAll, 'OpenStreetMap');
-
-
-/* POLYGON and POLYLINE OVERLAYS */
-/*
-$.getJSON("data/gemeinden.geojson", function (data){
-  var geoJsonLayer = L.geoJson(data, {
-    style: function (feature) {
-      return {
-        'color': 'green',
-        'weight': 2,
-        'fillColor': '#fff',
-        'fillOpacity': 0
-      }
-    },
-    onEachFeature: function( feature, layer) {
-      layer.bindPopup(feature.properties.GEN) // change to match your geojson property labels
-    }
-  }).addTo(map);
-  controlLayers.addOverlay(geoJsonLayer, 'Gemeinden');
-});
-
-$.getJSON("data/landkreise.geojson", function (data){
-  var geoJsonLayer = L.geoJson(data, {
-    style: function (feature) {
-      return {
-        'color': 'red',
-        'weight': 2,
-        'fillColor': '#fff',
-        'fillOpacity': 0
-      }
-    },
-    onEachFeature: function( feature, layer) {
-      layer.bindPopup(feature.properties.PARK_NAME) // change to match your geojson property labels
-    }
-  }).addTo(map);
-  controlLayers.addOverlay(geoJsonLayer, 'Landkreise');
-});
-*/
 
 $.getJSON("data/gemeinden.geojson", function (data) {
   var geoJsonLayer = L.geoJson(data, {
