@@ -60,7 +60,7 @@
             $('#standesamt thead tr').clone(true).appendTo( '#standesamt thead' );
             $('#standesamt thead tr:eq(1) th').each( function (i) {
                 var title = $(this).text();
-                $(this).html( '<input type="text" placeholder="Suche in '+title+'" />' );
+                $(this).html( '<input type="text" placeholder="Suche" />' );
 
                 $( 'input', this ).on( 'keyup change', function () {
                     if ( table.column(i).search() !== this.value ) {
@@ -110,7 +110,7 @@
                         <th>Ort + Zeitraum</th>
                         <th>Standesamt</th>
                         <th>Archiv</th>
-						<th>OFB</th>
+                        <th>OFB</th>
                         <th>Anmerkungen</th>
                     </tr>
                 </thead>
