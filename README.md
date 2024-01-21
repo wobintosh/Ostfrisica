@@ -1,3 +1,5 @@
+**Dieses Repository ist wird nicht weiter aktualisiert, aktuellere Versionen liegen auf [Codeberg](https://codeberg.org/wobintosh/Ostfrisica).**
+
 Zusammenstellungen für den Arbeitsalltag im Archivalltag.
 
 Die Inhalte stehen, falls nicht anders angemerkt, unter der Lizenz CC-BY-SA.
